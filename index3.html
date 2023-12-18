@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main2.css">
+</head>
+<body>
+    <div class = "alert-box" id = 'alert-box'>
+        알림창임
+    </div>
+    <div>
+        <button onclick="modal('아이디를 입력해주세요')">버튼1</button>
+        <button onclick="modal('비번을 입력해주세요')">버튼2</button>
+    </div>
+
+<script>
+
+    //파라미터 문법 - 가변적인 하나의 부분만 파라미터값으로 치환해 함수 하나로만 쓰기
+    function modal(a){
+        document.getElementById('alert-box').style.display = 'block';
+        document.getElementById('alert-box').innerHTML = a;
+    }
+
+    //버튼1 - 아이디 입력해주세요. 버튼2 - 비밀번호 입력해주세요.
+    //모달창 열기
+    // function idModal(){
+    //     document.getElementById('alert-box').style.display = 'block';
+    //     document.getElementById('alert-box').innerHTML = '아이디를 입력해주세요.';
+    // }
+
+    // function pwModal(){
+    //     document.getElementById('alert-box').style.display = 'block';
+    //     document.getElementById('alert-box').innerHTML = '비밀번호를 입력해주세요.';
+    // }  
+</script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id = "hello">안녕하세요</h1>
+    <h1 id = "hi">JS 초보에요</h1>
+
+    <script>
+        // 아이디명으로 많이 쓰는 이유 : id는 중복을 허용하지 않음
+        // 클래스명으로 주려면 document.getElementsByClassName
+        document.getElementById('hello').innerHTML = '안녕';
+        // 주석 처리 ctrl + / , command + /
+        // . : ~의 , 문서의 id요소를 가져와서 내부 요소를 '안녕'으로 바꿔
+        // = : 등호는 오른쪽을 왼쪽에 넣으라는 뜻 <=
+        //document.getElementById('바꿀 html요소 id').무엇을 = '어떻게';
+        document.getElementById('hello').style.color = 'red';  
+        //getElementById('hello') : 셀렉터라고 부름(찾는 역할)
+        document.getElementById('hi').innerHTML = 'JS 고수에요';
+        document.getElementById('hello').style.fontSize = '16px';
+    </script>
+
+</body>
+</html>

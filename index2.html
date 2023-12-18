@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main2.css">
+</head>
+<body>
+    <!-- 클래스명에 커서 찍고 ctrl + e or command + e -->
+    <div class = "alert-box" id = 'alert-box'>
+        알림창
+        <button id = "close-btn" onclick="actModal('none')">x</button>
+    </div>
+    <button onclick="actModal('block')">버튼</button>
+    <script>
+        function actModal(a){
+            document.getElementById('alert-box').style.display = a;
+        }
+
+        function 
+
+        // 구멍(파라미터) 문법으로 하나의 함수로 축약해서 사용 가능
+        // function actModal(구멍(파라미터값)){
+        //     document.getElementById('alert-box').style.display = 구멍;
+        // }
+    
+        // function openModal(){
+        //     document.getElementById('alert-box').style.display = 'block';
+        // }    
+    
+        // // 함수명 영어 작명시 camelCase작명법 사용 ex) openAlert(), closeModal()
+        // function closeModal(){
+        //     document.getElementById('alert-box').style.display = 'none';
+        // }
+
+        function plus(구멍) {
+            2 + 구멍
+        }
+
+        plus(1);
+        plus(2);
+
+    </script>
+</body>
+</html>

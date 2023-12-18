@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main2.css">
+</head>
+<body>
+    <div class = "alert-box" id = 'alert-box'>
+        <textarea id="login" cols="20" rows="1"></textarea>
+        <button id="close">닫기</button>
+    </div>
+    <div>
+        <button onclick="modal('아이디를 입력해주세요')">버튼1</button>
+        <button onclick="modal('비번을 입력해주세요')">버튼2</button>
+    </div>
+    <script>
+        document.getElementById('close').addEventListener('click', function(){
+            document.getElementById('alert-box').style.display = 'none';
+        });
+
+        function modal(a){
+        document.getElementById('alert-box').style.display = 'block';
+        document.getElementById('login').innerHTML = a;
+    }    
+    </script>
+    
+</body>
+</html>
