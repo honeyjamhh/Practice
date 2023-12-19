@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="main2.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <div class = "alert-box" id = 'alert-box'>
@@ -16,6 +16,7 @@
         <button onclick="modal('비번을 입력해주세요')">버튼2</button>
     </div>
     <script>
+                                                                    //파라미터자리에 들어가는 함수, 코드를 순차적으로 실행할 때, 콜백함수
         document.getElementById('close').addEventListener('click', function(){
             document.getElementById('alert-box').style.display = 'none';
         });
